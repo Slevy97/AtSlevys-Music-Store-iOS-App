@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		9AFA757C226BD75000367378 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFA757B226BD75000367378 /* AppDelegate.swift */; };
-		9AFA757E226BD75000367378 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFA757D226BD75000367378 /* ViewController.swift */; };
 		9AFA7581226BD75000367378 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AFA757F226BD75000367378 /* Main.storyboard */; };
 		9AFA7583226BD75100367378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AFA7582226BD75100367378 /* Assets.xcassets */; };
 		9AFA7586226BD75100367378 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AFA7584226BD75100367378 /* LaunchScreen.storyboard */; };
+		9AFFA0D5226C02DF0025641A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFFA0D4226C02DF0025641A /* RegisterViewController.swift */; };
+		9AFFA0D7226C02F80025641A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFFA0D6226C02F80025641A /* LoginViewController.swift */; };
+		9AFFA0DA226C0F1C0025641A /* EditingUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFFA0D9226C0F1C0025641A /* EditingUIViewController.swift */; };
+		9AFFA0DC226C4AB80025641A /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFFA0DB226C4AB80025641A /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9AFA7578226BD75000367378 /* AtSlevy's.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AtSlevy's.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AFA757B226BD75000367378 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9AFA757D226BD75000367378 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9AFA7580226BD75000367378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9AFA7582226BD75100367378 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AFA7585226BD75100367378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AFA7587226BD75100367378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AFFA0D4226C02DF0025641A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		9AFFA0D6226C02F80025641A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9AFFA0D9226C0F1C0025641A /* EditingUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingUIViewController.swift; sourceTree = "<group>"; };
+		9AFFA0DB226C4AB80025641A /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		9AFA757A226BD75000367378 /* AtSlevy's */ = {
 			isa = PBXGroup;
 			children = (
+				9AFFA0D8226C0E960025641A /* Common */,
+				9AFFA0D3226BFA5C0025641A /* Store */,
+				9AFFA0D2226BFA530025641A /* Account */,
+				9AFFA0D1226BFA420025641A /* Instruments */,
 				9AFA757B226BD75000367378 /* AppDelegate.swift */,
-				9AFA757D226BD75000367378 /* ViewController.swift */,
 				9AFA757F226BD75000367378 /* Main.storyboard */,
 				9AFA7582226BD75100367378 /* Assets.xcassets */,
 				9AFA7584226BD75100367378 /* LaunchScreen.storyboard */,
 				9AFA7587226BD75100367378 /* Info.plist */,
 			);
 			path = "AtSlevy's";
+			sourceTree = "<group>";
+		};
+		9AFFA0D1226BFA420025641A /* Instruments */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Instruments;
+			sourceTree = "<group>";
+		};
+		9AFFA0D2226BFA530025641A /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				9AFFA0D4226C02DF0025641A /* RegisterViewController.swift */,
+				9AFFA0D6226C02F80025641A /* LoginViewController.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		9AFFA0D3226BFA5C0025641A /* Store */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		9AFFA0D8226C0E960025641A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9AFFA0D9226C0F1C0025641A /* EditingUIViewController.swift */,
+				9AFFA0DB226C4AB80025641A /* Utilities.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AFA757E226BD75000367378 /* ViewController.swift in Sources */,
+				9AFFA0D7226C02F80025641A /* LoginViewController.swift in Sources */,
+				9AFFA0DA226C0F1C0025641A /* EditingUIViewController.swift in Sources */,
 				9AFA757C226BD75000367378 /* AppDelegate.swift in Sources */,
+				9AFFA0DC226C4AB80025641A /* Utilities.swift in Sources */,
+				9AFFA0D5226C02DF0025641A /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "slevy.AtSlevy-s";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +354,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "slevy.AtSlevy-s";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
